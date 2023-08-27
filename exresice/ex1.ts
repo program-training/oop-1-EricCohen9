@@ -48,3 +48,40 @@ class Square extends Rectangle{
         return this.hight**2
     }
 }
+class shnape{
+    constructor(){}
+    draw():void{
+        console.log("drawing a shape")
+    }
+    renderShapes(){
+    for(let i of shnape){
+       console.log( i.draw)
+    }}
+}
+class Triangle extends shnape{
+    constructor(){
+        super()
+    }
+    draw():void{
+        console.log("drawing a triangle")
+    }
+}
+class Circle extends shnape{
+    constructor(){
+        super()
+    }
+    draw():void{
+        console.log("drawing a circle")
+    }
+}
+class Square2 extends shnape{
+    constructor(){
+        super()
+    }
+    draw():void{
+        console.log("drawing a square")
+    }
+}
+for(let i of shnape){
+    
+}
