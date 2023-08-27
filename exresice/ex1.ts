@@ -53,10 +53,7 @@ class shnape{
     draw():void{
         console.log("drawing a shape")
     }
-    renderShapes(){
-    for(let i of shnape){
-       console.log( i.draw)
-    }}
+    
 }
 class Triangle extends shnape{
     constructor(){
@@ -82,6 +79,13 @@ class Square2 extends shnape{
         console.log("drawing a square")
     }
 }
-for(let i of shnape){
-    
+function renderShapes(shapes: shnape[]): void {
+    for (const i of shapes) {
+        i.draw();
+    }
 }
+const circle = new Circle();
+const triangle = new Triangle();
+const square = new Square2();
+const shapesArray: shnape[] = [circle, triangle, square];
+renderShapes(shapesArray);
